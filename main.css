@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;300;600;800&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+:root{
+    --main-bg: #230007;
+    --main-cA: #D7CF07;
+    --main-n: #D98324;
+    --main-red: #A40606;
+    --main-m: #5A0002;
+
+}
+
+body {
+    background-color: var(--main-bg);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Anek Latin', Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 400px;
+    background: url(./assets/Sw-02-Head.jpg) center center;
+    background-size: cover;
+    border-bottom: 1px solid var(--main-n);   
+}
+
+.navegador{
+    background-color: rgba(90, 0, 2, .6);
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-cA);
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.info {
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_card{
+
+}
+
+.info_card img {
+    border-radius: .5em;
+}
+
+.info_text {
+    width: 75%;
+    color:white;
+    font-size: 1.1em;
+    font-weight: 300;
+    margin-top: 1.5em;
+    text-align: center;
+    font-kerning: auto;
+}
+
+.info_text, span{
+    margin-bottom: 2em;
+}
+
+h2{
+    margin-bottom: .5em;
+}
+
+.contacto{
+    background: var(--main-red) url(./assets/sw-03.jpg) center center no-repeat;
+    background-size: cover;
+    height: 250px;
+    font-size: 1.2em;
+    color:aliceblue;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .6);
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--main-n);   
+    border-bottom: 1px solid var(--main-n);   
+}
+
+.formulario {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.formulario input{
+    margin-top: 1em;
+    padding: .8em 1em;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.contacto_formulario-btn{
+    background-color: var(--main-red);
+    color:var(--main-cA);
+}
+
+input::placeholder{
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.contacto_formulario-btn:hover{
+    background-color: var(--main-n);
+    color:var(--main-bg);
+}
+
+footer{
+    height: 80px;
+    background-color: var(--main-bg);
+    color:var(--main-cA);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.redes{
+    margin: 1em 0;
+}
