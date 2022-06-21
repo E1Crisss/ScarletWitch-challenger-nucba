@@ -22,34 +22,46 @@
         </nav>
     </header>
 
-    <section class="info" id="info">
-        <article class="info_card">
-            <img src="./assets/Sw-01.jpg" width="400px" alt="La Bruja Escarlata">
-        </article>
-        <article class="info_text">
-            <h2>¿Quíen es la Bruja Escarlata (Scarlet Witch)?</h2>
-            <p>La Bruja Escarlata de los Avengers de Marvel es una villana/heroína que no siempre fue poderosa. Conoce la historia de cómo resurgió tras perder a sus padres.
+    <section id="info">
+        <article class="info">
+            <div class="info_card" >
+                <img src="./assets/Sw-01.jpg" width="400px" alt="La Bruja Escarlata">
+            </div>
+            <div class="info_text">
+                <h2>¿Quíen es la Bruja Escarlata (Scarlet Witch)?</h2>
+                <p >La Bruja Escarlata de los Avengers de Marvel es una villana/heroína que no siempre fue poderosa.     Conoce la historia de cómo resurgió tras perder a sus padres.
                 La Bruja Escarlata de los Avengers de Marvel, que hoy es una de las villanas/heroínas favoritas de los Vengadores, no siempre fue poderosa. Ella literalmente, resurgió de los escombros de su edificio derrumbado, en el que perdió a sus padres.
                 
-                Esta estrella de Marvel, también conocida como Wanda Maximoff, tiene una historia resiliente que la ha hecho poderosa. Ya que, luego de quedar huérfana y someterse a experimentos adquirió habilidades que intenta perfeccionar para hacer del mundo un lugar mejor.</p>
+                Esta estrella de Marvel, también conocida como Wanda Maximoff, tiene una historia resiliente que la ha hecho poderosa. Ya que, luego de quedar huérfana y someterse a experimentos adquirió habilidades que intenta perfeccionar para hacer del mundo un lugar mejor.
+                </p>
+            </div>
         </article>
 
-        <article class="info_text">
-            <p>Historia de Scarlet Witch (Bruja Escarlata). Así sobrevivió y resurgió del escombro esta heroína de los Avengers de Marvel
+        <article class="info">
+            <div class="info_text">
+
+                <h3>Historia de Scarlet Witch (Bruja Escarlata)</h3>
+                <p>Así sobrevivió y resurgió del escombro esta heroína de los Avengers de Marvel
                 Wanda Maximoff, caracterizada por Elizabeth Olsen, y su hermano gemelo Pietro, nacieron en Sokovian. Ambos sobrevivieron a una explosión en el edificio donde vivían con sus padres, quienes no lograron sobrevivir, como ellos.
                 
                 Estuvieron atrapados en los escombros, donde permanecieron enterrados y aterrorizados de que el segundo misil, que cayó frente a ellos, explotara. En ese artefacto mortal estaba el nombre de Stark.</p>
                 <span><a href="https://www.smashmexico.com.mx/marvel/historia-de-bruja-escarlata-scarlet-witch-uno-de-los-avengers-de-marvel/">FUENTE EXTRAIDA DE SMASH</a></span>
+            </div>
+                
+                <div class="info_card">
+                    <img src="/assets/sw-04.jpg" width="400" alt="Scarlet Witch">
+                </div>
+            
         </article>
-        <article class="info_card"><img src="/assets/sw-04.jpg" width="400" alt="Scarlet Witch"></article>
     </section>
 
     <section class="contacto" id="contacto">
         <h3>Suscribite para más información!</h3>
-        <form action="" class="formulario">
-            <input type="text" name="name" id="name" placeholder="nombre">
-            <input type="email" name="email" id="email" placeholder="correo electronico">
-            <input type="button" value="Suscribite" class="contacto_formulario-btn">
+        <div id="error"></div>
+        <form action="/" id="formulario">
+            <input type="text" name="name" id="name" placeholder="nombre" pattern="[a-z]{1,15}" >
+            <input type="email" name="email" id="email" placeholder="correo electronico" required>
+            <input type="submit" value="Suscribite" class="contacto_formulario-btn">
         </form>
     </section>
     <footer>
@@ -60,8 +72,8 @@
                 <li><a href="#contacto">contacto</a></li>
             </ul>
         </div>
-        <div class="redes"></div>
         <div class="cp"><span>Copyright © 2022 All Rights Reserved by Cristian Manuel Gauna</span></div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
