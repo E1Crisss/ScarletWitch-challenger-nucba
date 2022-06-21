@@ -145,6 +145,12 @@ footer{
     margin-top: 1em;
 }
 
+footer .cp{
+    padding: 0 5em;
+    vertical-align: middle;
+    text-align: center;
+}
+
 
 @media only screen and (min-width: 1024px) { 
     .info {
